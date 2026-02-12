@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <time.h>
 /**
 * main - print whether n is +ve or -ve
 * Return: 0
