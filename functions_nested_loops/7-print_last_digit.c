@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* _abs - print all single digit numbers of base 10
+* print_last_digit - print last digit of a number
 * @n: int number
-* Return: n
+* Return: last digit
 */
 int print_last_digit(int n)
 {

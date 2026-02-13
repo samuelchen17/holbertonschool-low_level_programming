@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _abs - print all single digit numbers of base 10
+* _abs - print absolute value of integer
 * @n: int number
 * Return: n
 */
