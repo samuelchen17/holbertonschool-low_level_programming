@@ -6,12 +6,14 @@
 int main(void)
 {
 int n;
-n = 0;
-while (n <= 9)
+n = '0';
+while (n <= '9')
 {
-printf("%d, ", n);
+putchar(n);
+putchar(',');
+putchar(' ');
 n++;
 }
-printf("\n");
+putchar('\n');
 return (0);
 }
