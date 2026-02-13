@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 * main - print alphabet in lowercase
-* return: 0
+* Return: 0
 */
 int main(void)
 {
@@ -11,7 +11,7 @@ char c;
 {
 putchar(c);
 c++;
-} 
+}
 putchar('\n');
 return (0);
 }
