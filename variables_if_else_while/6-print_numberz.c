@@ -13,6 +13,6 @@ while (n <= 9)
 putchar(n + '0');
 n++;
 }
-printf("\n");
+putchar('\n');
 return (0);
 }
