@@ -5,9 +5,9 @@
 */
 int main(void)
 {
+char c;
 c = 'a';
 while (c <= 'z')
-char c;
 {
 putchar(c);
 c++;
