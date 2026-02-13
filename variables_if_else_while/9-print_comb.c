@@ -1,0 +1,17 @@
+#include <stdio.h>
+/**
+* main - print 0-9, comma and space separated
+* Return: 0
+*/
+int main(void)
+{
+int n;
+n = 0;
+while (n <= 9)
+{
+printf("%d, ", n);
+n++;
+}
+printf("\n");
+return (0);
+}
