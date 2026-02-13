@@ -10,7 +10,7 @@ n = '0';
 while (n <= '9')
 {
 putchar(n);
-if (n!='9')
+if (n != '9')
 {
 putchar(',');
 putchar(' ');
