@@ -19,7 +19,7 @@ for (i = n; i <= x; i++)
 {
 if (i != n)
 {
-printf(", ")
+printf(", ");
 }
 printf("%d", i);
 }
@@ -30,7 +30,7 @@ for (i = n; i >= x; i--)
 {
 if (i != n)
 {
-printf(", ")
+printf(", ");
 }
 printf("%d", i);
 }
