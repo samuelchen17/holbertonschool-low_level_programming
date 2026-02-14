@@ -13,7 +13,7 @@ int i;
 
 x = 98;
 
-if (i <= x)
+if (n <= x)
 {
 for (i = n; i <= x; i++)
 {
