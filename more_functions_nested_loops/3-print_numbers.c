@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
 * print_numbers - print 0-9
@@ -11,8 +10,8 @@ int i = 0;
 
 while (i < 10)
 {
-printf("%d", i);
+_putchar(i + '0');
 i++;
 }
-printf("\n");
+_putchar('\n');
 }
