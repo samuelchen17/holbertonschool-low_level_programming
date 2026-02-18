@@ -6,7 +6,7 @@
 * x3 and x5 print FizzBuzz
 */
 
-void fizz_buzz(void)
+int main(void)
 {
 int i;
 
@@ -31,4 +31,5 @@ printf("%d ", i);
 }
 
 printf("\n");
+return (0);
 }
