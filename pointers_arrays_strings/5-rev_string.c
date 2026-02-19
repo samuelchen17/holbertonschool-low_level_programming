@@ -11,12 +11,6 @@ void rev_string(char *s)
 int i = 0, j = 0;
 char temp;
 
-/* if string is empty, return */
-if (s == NULL)
-{
-return;
-}
-
 /* find the length of the string */
 while (s[i] != '\0')
 i++;
