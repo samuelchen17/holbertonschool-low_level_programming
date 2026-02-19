@@ -7,9 +7,20 @@
  */
 void print_rev(char *s)
 {
-if (*s == '\0')
-return;
+int i = 0;
 
-print_rev(s + 1);
-_putchar(*s);
+/* cycle through string */
+while (s[i] != '\0')
+{
+i++;
 }
+
+/* pointer starts at end of string */
+for (i = i - 1; i >= 0; i--)
+{
+_putchar(s[i]);
+}
+
+_putchar('\n');
+}
+
