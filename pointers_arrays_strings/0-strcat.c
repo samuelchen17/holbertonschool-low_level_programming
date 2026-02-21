@@ -10,7 +10,7 @@
 
 char *_strcat(char *dest, char *src)
 {
-int i = 0; j = 0;
+int i = 0, j = 0;
 
 /* find end of dest */
 while (dest[i] != '\0')
@@ -30,8 +30,3 @@ dest[i] = '\0';
 
 return (dest);
 }
-
-// iterate through dest to find location of null byte
-// save the location
-// iterate through src and copy each character to location of null byte in dest
-// add null byte at the end
