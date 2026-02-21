@@ -20,7 +20,7 @@ dest[i] = src[i];
 i++;
 }
 
-/* add null byte at end */
+/* add null padding for remaining bytes */
 while (i < n)
 {
 dest[i] = '\0';
