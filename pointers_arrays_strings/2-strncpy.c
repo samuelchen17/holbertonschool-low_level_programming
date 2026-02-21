@@ -21,7 +21,10 @@ i++;
 }
 
 /* add null byte at end */
+while (i < n)
+{
 dest[i] = '\0';
-
+i++;
+}
 return (dest);
 }
