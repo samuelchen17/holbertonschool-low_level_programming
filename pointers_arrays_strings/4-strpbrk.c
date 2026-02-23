@@ -1,14 +1,16 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
-* _strspn - counts num of char in the beginning of s that are in accept
+* _strpbrk -  finds first occurrence in the 's' of any of the bytes in 'accept'
 * @s: string
 * @accept: string to be searched
 *
-* Return: number of bytes in the beginning of s that are in accept
+* Return: pointer to the byte in s that matches one of the bytes in accept,
+* or NULL if no such byte is found
 */
 
-int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 int i, j;
 int count = 0;
