@@ -12,25 +12,23 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-int i, j;
-int count = 0;
+int i = 0;
+int j;
 
-for (i = 0; s[i] != '\0'; i++)
+while (s[i])
 {
-/* for each char in s, check if it's in accept */
-for (j = 0; accept[j] != '\0'; j++)
+j = 0;
+
+while (accept[j])
 {
 if (s[i] == accept[j])
-{
-count++;
-break;
-}
+return (&s[i]);
+
+j++;
 }
 
-/* if reach end of accept, break out of loop */
-if (accept[j] == '\0')
-break;
+i++;
 }
 
-return (count);
+return (NULL);
 }
