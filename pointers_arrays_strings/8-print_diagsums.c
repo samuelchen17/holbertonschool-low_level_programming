@@ -18,5 +18,5 @@ pSum += a[row * size + row];
 sSum += a[row * size + (size - row - 1)];
 }
 
-printf("%d, %d", pSum, sSum);
+printf("%d, %d\n", pSum, sSum);
 }
