@@ -10,7 +10,7 @@
 void print_num_of_args(int argc, char *argv[])
 {
 (void)argv;
-printf("%d\n", argc);
+printf("%d\n", argc - 1);
 }
 
 /**
