@@ -5,6 +5,7 @@
  * mul_args - multiplies two args
  * @argc: num of args
  * @argv: arr of args
+ * Return: 0 if success, 1 if error
  */
 
 int mul_args(int argc, char *argv[])
@@ -14,7 +15,7 @@ int mul = 0;
 if (argc != 3)
 {
 printf("Error\n");
-return (1); 
+return (1);
 }
 
 mul = atoi(argv[1]) * atoi(argv[2]);
