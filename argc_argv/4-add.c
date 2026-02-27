@@ -31,7 +31,12 @@ return (1);
 }
 }
 
-sum = atoi(argv[1]) + atoi(argv[2]);
+/* add all args */
+for (argc = 1; argv[argc] != NULL; argc++)
+{
+sum += atoi(argv[argc]);
+}
+
 printf("%d\n", sum);
 return (0);
 }
