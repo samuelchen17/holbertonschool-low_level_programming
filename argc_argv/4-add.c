@@ -12,7 +12,7 @@
 int add_args(int argc, char *argv[])
 {
 int sum = 0;
-int i;
+int i, j;
 
 /* check if num of args is correct */
 if (argc == 1)
@@ -22,12 +22,15 @@ return (0);
 }
 
 /* check if args are digits */
-for (i = 0; argv[1][i]; i++)
+for (i = 1; argv[i] != NULL; i++)
 {
-if (!isdigit(argv[1][i]))
+for (j = 0; argv[i][j]; j++)
+{
+if (!isdigit(argv[i][j]))
 {
 printf("Error\n");
 return (1);
+}
 }
 }
 
