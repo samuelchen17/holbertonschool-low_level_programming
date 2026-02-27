@@ -22,7 +22,6 @@ return (0);
 }
 
 /* check if args are digits */
-int i;
 for (i = 0; argv[1][i]; i++)
 {
 if (!isdigit(argv[1][i]))
