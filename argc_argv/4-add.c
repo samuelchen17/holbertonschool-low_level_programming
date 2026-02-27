@@ -28,7 +28,7 @@ for (i = 0; argv[1][i]; i++)
 if (!isdigit(argv[1][i]))
 {
 printf("Error\n");
-return 1;
+return (1);
 }
 }
 
