@@ -9,7 +9,7 @@
 
 void print_args(int argc, char *argv[])
 {
-void(argc);
+(void)argc;
 printf("%s\n", argv[0]);
 }
 
