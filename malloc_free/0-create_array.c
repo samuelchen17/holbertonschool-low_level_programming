@@ -1,8 +1,13 @@
-# malloc, free
-
-```c
 #include "main.h"
 #include <stdlib.h>
+
+/**
+ * create_array - creates an arr of chars and initializes it with c
+ * @size: size of arr
+ * @c: char to initialize arr with
+ *
+ * Return: pointer to array, NULL if size = 0 or malloc fails
+ */
 
 char *create_array(unsigned int size, char c)
 {
@@ -16,9 +21,8 @@ arr = malloc(sizeof(char) * size);
 
 /* check malloc success */
 if (arr == NULL)
-return NULL;
+return (NULL);
 
-// iterate starting from first byte to last byte, placing 'c' in all
 for (i = 0; i < size; i++)
 {
 arr[i] = c;
@@ -26,4 +30,3 @@ arr[i] = c;
 
 return (arr);
 }
-```
