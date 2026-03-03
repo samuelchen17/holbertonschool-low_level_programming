@@ -1,16 +1,12 @@
-# malloc, free
-
-```c
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
 
 /**
- * _strdup - creates an arr of chars and initializes it with c
- * @size: size of arr
- * @c: char to initialize arr with
+ * str_concat - concatenates two strings
+ * @s1: string 1
+ * @s2: string 2
  *
- * Return: pointer to array, NULL if size = 0 or malloc fails
+ * Return: pointer to concatenated string, NULL if malloc fails
  */
 
 char *str_concat(char *s1, char *s2)
@@ -43,7 +39,3 @@ arr[len1 + len2] = '\0';
 
 return (arr);
 }
-
-```
-
-iterate through first string
