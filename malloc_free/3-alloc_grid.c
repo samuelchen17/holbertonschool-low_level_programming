@@ -1,15 +1,14 @@
-# malloc, free
-
-```c
 #include "main.h"
 #include <stdlib.h>
 
 /**
  * alloc_grid - creates a 2d array of int
- * @
+ * @width: width of the grid
+ * @height: height of the grid
  *
- * Return:
+ * Return: pointer to the 2d array, or NULL on failure
  */
+
 
 int **alloc_grid(int width, int height)
 {
@@ -34,5 +33,3 @@ grid[i][j] = 0;
 
 return (grid);
 }
-
-```
