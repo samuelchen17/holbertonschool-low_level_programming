@@ -11,9 +11,12 @@
  * Return:
  */
 
-int **alloc_grid(int width, int height)
+void free_grid(int **grid, int height);
 {
-
+// **grid = an array of pointers
+// iterate through pointer in grid
+// for each pointer, free memory from each row
+// free grid at end
 }
 
 ```
