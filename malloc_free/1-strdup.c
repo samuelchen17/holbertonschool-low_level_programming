@@ -1,16 +1,12 @@
-# malloc, free
-
-```c
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
 
 /**
- * _strdup - creates an arr of chars and initializes it with c
- * @size: size of arr
- * @c: char to initialize arr with
+ * _strdup - dupe a string
+ * @str: string to dupe
  *
- * Return: pointer to array, NULL if size = 0 or malloc fails
+ * Return: pointer to duped string, NULL if str is NULL or malloc fails
  */
 
 char *_strdup(char *str)
@@ -37,5 +33,3 @@ arr[i] = str[i];
 
 return (arr);
 }
-
-```
