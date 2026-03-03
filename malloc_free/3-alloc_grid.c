@@ -23,7 +23,7 @@ grid = malloc(sizeof(int *) * height);
 
 for (i = 0; i < height; i++)
 {
-grid[i] = malloc(sizeof(int) * width)
+grid[i] = malloc(sizeof(int) * width);
 
 for (j = 0; j < width; j++)
 {
