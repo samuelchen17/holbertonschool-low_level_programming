@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * _strdup - dupe a string
@@ -11,14 +10,19 @@
 
 char *_strdup(char *str)
 {
-int len;
+int len = 0;
 char *arr;
 int i;
+char *tmp = str;
 
 if (str == NULL)
 return (NULL);
 
-len = strlen(str);
+while (*tmp != '\0')
+{
+len++;
+tmp++;
+}
 
 arr = malloc(len + 1);
 
