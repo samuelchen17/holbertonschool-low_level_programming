@@ -59,5 +59,14 @@ dog->name = _strdup(name);
 dog->age = age;
 dog->owner = _strdup(owner);
 
+/* free memory if allocation fails */
+if (!dog->name || !dog->owner)
+{
+free(dog->name);
+free(dog->owner);
+free(dog);
+return (NULL);
+}
+
 return (dog);
 }
