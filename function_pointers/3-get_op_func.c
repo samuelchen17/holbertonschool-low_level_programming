@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 const op_t ops[] = {
-{'+', op_add},
-{'-', op_sub},
-{'*', op_mul},
-{'/', op_div},
-{'%', op_mod},
-{'\0', NULL}
+{"+", op_add},
+{"-", op_sub},
+{"*", op_mul},
+{"/", op_div},
+{"%", op_mod},
+{"\0", NULL}
 };
 
 /**
@@ -29,6 +29,3 @@ i++;
 
 return (NULL);
 }
-
-if (s && strcmp(s, ops[i].op) == 0)
-if (s && s[0] == ops[i].op && s[1] == '\0')
