@@ -1,14 +1,14 @@
 #include "3-calc.h"
 #include <stdlib.h>
 
-static const op_t ops[] = {
-{'+', op_add},
-{'-', op_sub},
-{'*', op_mul},
-{'/', op_div},
-{'%', op_mod},
-{'\0', NULL}
-};
+// static const op_t ops[] = {
+// {'+', op_add},
+// {'-', op_sub},
+// {'*', op_mul},
+// {'/', op_div},
+// {'%', op_mod},
+// {'\0', NULL}
+// };
 
 /**
  * get_op_func - selects correct function given the operator
