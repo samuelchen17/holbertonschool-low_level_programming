@@ -1,14 +1,6 @@
 #include "3-calc.h"
 #include <stdlib.h>
 
-/**
- * get_op_func - selects correct function given the operator
- * @s: operator
- * Return: ptr to correct func else NULL
- */
-
-int (*get_op_func(char *s))(int, int)
-{
 static op_t ops[] = {
 {'+', op_add},
 {'-', op_sub},
@@ -18,6 +10,14 @@ static op_t ops[] = {
 {'\0', NULL}
 };
 
+/**
+ * get_op_func - selects correct function given the operator
+ * @s: operator
+ * Return: ptr to correct func else NULL
+ */
+
+int (*get_op_func(char *s))(int, int)
+{
 int i = 0;
 while (ops[i].op)
 {
