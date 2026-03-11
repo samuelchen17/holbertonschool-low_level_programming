@@ -24,7 +24,8 @@ a = atoi(argv[1]);
 b = atoi(argv[3]);
 op = argv[2][0];
 
-if (op != '+' && op != '-' && op != '*' && op != '/' && op != '%')
+if ((op != '+' && op != '-' && op != '*' && op != '/' && op != '%')
+|| argv[2][1] != '\0')
 {
 printf("Error\n");
 return (99);
