@@ -21,8 +21,9 @@ static op_t ops[] = {
 int i = 0;
 while (ops[i].op)
 {
-if (ops[i].op == s[0])
+if (s && ops[i].op == s[0])
 return (ops[i].f);
+
 i++;
 }
 
