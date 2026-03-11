@@ -1,4 +1,6 @@
 #include "3-calc.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * main - performs simple math operations
@@ -9,16 +11,16 @@
 
 int main(int argc, char *argv[])
 {
-int a = atoi(argv[1]);
-int b = atoi(argv[3]);
-char op = argv[2][0];
-int op_func(int, int);
-
 if (argc != 4)
 {
 printf("Error\n");
 return (98);
 }
+
+int a = atoi(argv[1]);
+int b = atoi(argv[3]);
+char op = argv[2][0];
+int (*op_func)(int, int);
 
 if (op != '+' && op != '-' && op != '*' && op != '/' && op != '%')
 {
