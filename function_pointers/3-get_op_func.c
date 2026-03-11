@@ -1,7 +1,7 @@
 #include "3-calc.h"
 #include <stdlib.h>
 
-static op_t ops[] = {
+static const op_t ops[] = {
 {'+', op_add},
 {'-', op_sub},
 {'*', op_mul},
