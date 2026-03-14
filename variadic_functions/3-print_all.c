@@ -60,14 +60,10 @@ type_t types[] = {
 
 int i = 0;
 
-while (types[i].symbol)
-{
-if (c == types[i].symbol)
-return (types[i].f);
-
+while (types[i].symbol) && c != types[i].symbol)
 i++;
-}
-return (NULL);
+
+return (types[i].f);
 }
 
 /**
