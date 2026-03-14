@@ -63,7 +63,7 @@ int i = 0;
 while (types[i].symbol)
 {
 if (c == types[i].symbol)
-return (types[i].type);
+return (types[i].f);
 
 i++;
 }

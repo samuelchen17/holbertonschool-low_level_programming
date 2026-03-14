@@ -10,7 +10,7 @@
 typedef struct type
 {
 char symbol;
-void (*type)(va_list);
+void (*f)(va_list);
 } type_t;
 
 
