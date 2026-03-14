@@ -60,7 +60,7 @@ type_t types[] = {
 
 int i = 0;
 
-while (types[i].symbol) && c != types[i].symbol)
+while (types[i].symbol && c != types[i].symbol)
 i++;
 
 return (types[i].f);
