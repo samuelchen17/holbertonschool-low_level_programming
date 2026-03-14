@@ -2,6 +2,12 @@
 #include <stdarg.h>
 #include <stdio.h>
 
+static void (*get_print_func(char c))(va_list);
+static void print_char(va_list args);
+static void print_int(va_list args);
+static void print_float(va_list args);
+static void print_string(va_list args);
+
 /**
  * print_all -  print all args
  * @format: str to specify arg types
