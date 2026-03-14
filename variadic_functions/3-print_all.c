@@ -2,11 +2,11 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-static void (*get_print_func(char c))(va_list);
-static void print_char(va_list args);
-static void print_int(va_list args);
-static void print_float(va_list args);
-static void print_string(va_list args);
+void (*get_print_func(char c))(va_list);
+void print_char(va_list args);
+void print_int(va_list args);
+void print_float(va_list args);
+void print_string(va_list args);
 
 /**
  * print_all -  print all args
@@ -48,7 +48,7 @@ printf("\n");
  * Return: ptr to func that prints based on type
  */
 
-void (*get_print_func(char c))(va_list args)
+void (*get_print_func(char c))(va_list)
 {
 type_t types[] = {
 {'c', print_char},
