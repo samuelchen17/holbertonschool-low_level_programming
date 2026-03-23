@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 
+/* structs */
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
@@ -18,6 +19,8 @@ unsigned int len;
 struct list_s *next;
 } list_t;
 
+/* Prototypes */
 size_t print_list(const list_t *h);
+size_t list_len(const list_t *h);
 
 #endif
