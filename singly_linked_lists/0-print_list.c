@@ -20,5 +20,5 @@ ptr = ptr->next;
 count++;
 }
 
-return count;
+return (count);
 }
