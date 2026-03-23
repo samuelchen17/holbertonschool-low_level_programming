@@ -5,18 +5,21 @@
  * print_list - print all elements of a list
  *
  * @h: pointer to list
- * Return: Number of characters printed
+ * Return: Number of nodes
  */
 
 size_t print_list(const list_t *h)
 {
 size_t count = 0;
-const list_t *ptr = h;
 
-while (ptr != NULL)
+while (h != NULL)
 {
-printf("%d\n", ptr->str);
-ptr = ptr->next;
+if (h->str == NULL)
+printf("[0] (nil)\n");
+else
+printf("[%u] %s\n", h->len, h->str);
+
+h = h->next;
 count++;
 }
 
