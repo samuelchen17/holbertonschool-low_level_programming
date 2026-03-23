@@ -15,7 +15,7 @@ const list_t *ptr = h;
 
 while (ptr != NULL)
 {
-printf("d\n", ptr->str);
+printf("%d\n", ptr->str);
 ptr = ptr->next;
 count++;
 }
