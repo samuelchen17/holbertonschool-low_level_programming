@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_list - counts num of nodes in linked list
+ * list_len - counts num of nodes in linked list
  *
  * @h: pointer to head of list
  * Return: number of nodes
