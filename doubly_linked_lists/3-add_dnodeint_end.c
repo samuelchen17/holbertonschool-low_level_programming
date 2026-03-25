@@ -36,10 +36,10 @@ while (ptr->next != NULL)
 ptr = ptr->next;
 
 /* point prev tail to new node */
-tail->next = node;
+ptr->next = node;
 
 /* point to prev tail */
-node->prev = tail;
+node->prev = ptr;
 
 return (node);
 }
