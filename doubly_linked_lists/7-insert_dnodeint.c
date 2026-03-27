@@ -1,6 +1,5 @@
 #include "lists.h"
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * insert_dnodeint_at_index - insert node at index
@@ -16,11 +15,19 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 unsigned int i = 0;
 dlistint_t *tmp = *h, *node;
 
+unsigned int count = 0;
+
+while (tmp != NULL)
+{
+tmp = tmp->next;
+count++;
+}
+
 /* if at head */
 if (idx == 0)
 return (add_dnodeint(h, n));
 
-if (idx == dlistint_len(*h))
+if (idx == count)
 return (add_dnodeint_end(h, n));
 
 /* allocate memory for new node */
@@ -29,7 +36,7 @@ if (!node)
 return (NULL);
 
 node->n = n;
-
+tmp = *h;
 while (tmp != NULL)
 {
 if (i == idx)
@@ -40,11 +47,9 @@ tmp->prev = node;
 node->prev->next = node;
 return (node);
 }
-
 tmp = tmp->next;
 i++;
 }
-
 free(node);
 return (NULL);
 }
