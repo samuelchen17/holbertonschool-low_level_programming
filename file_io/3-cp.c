@@ -68,7 +68,6 @@ int main(int argc, char *argv[])
 {
 char *file_from, *file_to;
 int fd_from, fd_to;
-ssize_t c_write, c_read;
 
 if (argc != 3)
 {
