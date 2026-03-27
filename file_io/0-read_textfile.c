@@ -3,8 +3,6 @@
 #include <unistd.h>
 #include <stdlib.h>
 
-
-
 /**
  * read_textfile - read and print from file
  *
