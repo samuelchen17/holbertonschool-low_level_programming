@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * um_dlistint - return sum of all data in list
+ * sum_dlistint - return sum of all data in list
  *
  * @head: ptr to current head
  * Return: sum of all data
