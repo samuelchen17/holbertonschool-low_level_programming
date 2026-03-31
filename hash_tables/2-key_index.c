@@ -2,9 +2,7 @@
 #include <stdlib.h>
 
 /**
- * hkey_index - function that gives you the index of a key.
-
-
+ * key_index - function that gives you the index of a key.
  * @size: size of the array of the hash table
  * @key: key in hash table
  * Return: return index of key in hash table
