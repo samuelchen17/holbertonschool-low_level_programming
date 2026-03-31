@@ -17,6 +17,6 @@ unsigned long int hash;
 if (key == NULL || size == 0)
 return (0);
 
-hash = has_djb2(key);
+hash = hash_djb2(key);
 return (hash % size);
 }
