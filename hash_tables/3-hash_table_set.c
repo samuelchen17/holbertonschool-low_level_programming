@@ -48,12 +48,6 @@ return (0);
 idx = key_index((const unsigned char *)key, ht->size);
 current = ht->array[idx];
 
-if (current == NULL)
-{
-ht->array[idx] = ht_pair(key, value);
-}
-else
-{
 /* check if key already exists */
 while (current)
 {
@@ -69,12 +63,13 @@ return (0);
 }
 current = current->next;
 }
-}
 
-/* insert node at head for collision */
+/* create new node if key does not exist */
 new_node = ht_pair(key, value);
 if (new_node == NULL)
 return (0);
+
+/* insert node at head */
 new_node->next = ht->array[idx];
 ht->array[idx] = new_node;
 
